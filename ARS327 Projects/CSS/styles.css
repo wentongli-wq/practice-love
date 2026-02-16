@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css2?family=Playpen+Sans:wght@100..800&display=swap');
+
+html, body {
+    margin: 0;
+    padding: 0;
+    background: url("../images/C1BG.png") no-repeat fixed;
+    background-size: cover;
+    font-family: 'Playpen Sans', sans-serif;
+}
+
+nav {
+    width: 100%;
+    padding: 20px 0;
+}
+
+#wrapper{
+	width:100%;
+	margin:0 auto;
+}
+
+#imgcenter{
+	width:40%;
+	/* margin:0 0 0 60%;  right aligned */
+	margin: 0 30% 0 30%;
+}
+
+.teddy{
+	width:40%;
+	display:block; /* turns element into block element so can be centered */
+	margin:0 auto; /* centers block element */
+}
+
+#imgRight{
+	width: 40%;
+    position: absolute;
+    top: 70%;
+    right: 5%; 
+    transform: translateY(-50%);
+}
+
+.teddy{
+	width:40%;
+	display:block; /* turns element into block element so can be centered */
+	margin:0 auto; /* centers block element */
+}
+
+#girls {
+	width: 32%;
+    position: absolute;
+    top: 70%;
+    left: 5%; 
+    transform: translateY(-50%);
+}
+
+#affectionBar{
+	pointer-events: none;
+    width: 800px;
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.home nav a {
+    margin:0;
+    font-size:0.80em;
+    font-weight: bold;
+    text-align: center;
+    display:inline-block;
+    width:19%;
+    height:30px;
+    padding-top:10px;
+    border-radius:7px;
+    color: #e37da2;
+    text-decoration: none;
+    background-color: #ffffff;
+}
+
+.home nav a:hover {
+    color: #ffffff;
+    text-decoration: underline;
+    background-color: #7EC8E6;
+}
+
+.home nav a{
+	margin-top:300px; 
+	margin-left:70px;
+}
+
+#storyText, .chapter1p {
+    text-align: center;
+    font-size: 0.9em;
+    font-weight: bold;
+    border: 2px solid #EEAECA;
+    border-radius: 7px;
+    padding: 10px;
+    width: 70%;
+    max-width: 500px;
+    margin: 20px auto 10px auto;
+    background-color: rgba(255, 255, 255, 0.7);
+}
+
+.choice {
+    display: block;
+    width: 250px;
+    min-height: 50px;
+    padding: 10px 5px;
+    margin: 10px auto;
+    border-radius: 7px;
+    border: 2px solid #EEAECA;
+    font-weight: bold;
+    text-align: center;
+    cursor: pointer;
+    background-color: #EEAECA;
+    color: #ffffff;
+    
+}
+
+
+.choice.warm:hover { background-color: #FA948C; }
+.choice.neutral:hover { background-color: #FAB972; }
+.choice.awkward:hover { background-color: #739EFA; text-decoration: underline wavy; }
+
+
+
+
+
+body.chapter1-choice #storyContainer,
+body.normal-choice #storyContainer {
+    margin-top: 120px;
+}
+
+body.chapter1-choice #choices {
+    margin-top: 50px;
+}
+
+body.chapter1-feedback #storyContainer,
+body.normal-feedback #storyContainer {
+    margin-top: 300px;
+}
+
+body.chapter1-feedback #choices,
+body.normal-feedback #choices {
+    margin-top: 50px;
+}
+body.normal-choice #choices {
+	margin-bottom: 200px;
+}
+
+.next-btn {
+    width: 100px;
+    height: 40px;
+    background-color: #FAA8BC;
+    font-size: 1.2em;
+    display: block;
+}
+
+.next-btn:hover {
+    color: #ffffff;
+    text-decoration: underline;
+    background-color: #FACFC6;
+}
